@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="dologin" disabled='{{!loginbtnClickable}}'>{{logintext}}</button>
+    </view>
+  </view>
+
+  <!-- 店铺管理 -->
+  <view class="uploader" hidden='{{hide}}'>
+    <navigator url="../storeManagement/storeManagement" open-type="navigate" class="uploader-text">
+      <text>店铺管理</text>
+    </navigator>
+  </view>
+
+  <!-- 教师管理 -->
+  <view class="uploader" hidden='{{hide}}'>
+    <navigator url="../teacherManagement/teacherManagement" open-type="navigate" class="uploader-text">
+      <text>教师管理</text>
+    </navigator>
+  </view>
+
+  <!-- 课程管理 -->
+  <view class="uploader" hidden='{{hide}}'>
+    <navigator url="../lessonManagement/lessonManagement" open-type="navigate" class="uploader-text">
+      <text>课程管理</text>
+    </navigator>
+  </view>
+
+  <!-- 订单查看 -->
+  <view class="uploader" hidden='{{hide}}'>
+    <navigator url="../orderManagement/orderManagement" open-type="navigate" class="uploader-text">
+      <text>订单查看</text>
+    </navigator>
+  </view>
+
+</view>

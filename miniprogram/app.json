@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/storeManagement/storeManagement",
+    "pages/lessonManagement/lessonManagement",
+    "pages/orderManagement/orderManagement",
+    "pages/teacherManagement/teacherManagement",
+    "pages/storeManagement/addStore/addStore",
+    "pages/teacherManagement/addTeacher/addTeacher",
+    "pages/lessonManagement/addLesson/addLesson"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Drummer后台管理",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../common/lib/weui.wxss";
+
+label{
+  color: #999999;
+  font-size: 18px;  
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input{
+  padding-top: 15px;
+  border-top: 1px solid #999999 ;
+  border-bottom: 1px solid #999999;
+  height: 35px;
+  margin: 0px 3px 0px 3px
+}
+
+textarea{
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding-top: 15px;
+  width: 100%  
+}
+
+.view_part{
+  padding-top: 20px
+}

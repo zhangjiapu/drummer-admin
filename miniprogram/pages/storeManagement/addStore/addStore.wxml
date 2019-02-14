@@ -1,0 +1,63 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<view>
+
+<form bindsubmit='dosubmit' bindreset='doreset' >
+<view>
+<label>店铺名称</label>
+<input name = "storename"></input>
+</view>
+
+<view class='view_part'>
+<label>店铺描述</label>
+<input name= "storeIntro"></input>
+</view>
+
+<view class='view_part'>
+<label>经度</label>
+<input name="longitude"></input>
+</view>
+
+<view class='view_part'>
+<label>纬度</label>
+<input name= "latitude"></input>
+</view>
+
+
+<view class='view_part'>
+<label>店铺图片</label>
+<view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                  <view class="weui-uploader__title">点击可预览选好的图片</view>
+                  <view class="weui-uploader__info">{{imageList.length}}/{{count[countIndex]}}</view>
+                </view>
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files">
+                    <block wx:key="{{imageList}}" wx:for-item="image">
+                      <view class="weui-uploader__file">
+                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+        <button formType="reset">重置</button>
+      </view>
+
+</view>
+
+</form>
+</view>

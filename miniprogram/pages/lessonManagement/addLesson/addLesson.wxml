@@ -1,0 +1,29 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<view>
+
+<form bindsubmit='dosubmit' bindreset='doreset' >
+<view>
+<label>课程名称</label>
+<input name = "lessonname"></input>
+</view>
+
+<view class='view_part'>
+<label>课程描述</label>
+<input name= "lessonintro"></input>
+</view>
+
+<view class='view_part'>
+<label>课程费用</label>
+<input name="lessonprice"></input>
+</view>
+
+
+<view class="btn-area view_part">
+  <button type="primary" formType="submit">提交</button>
+  <button formType="reset">重置</button>
+</view>
+
+</form>
+</view>

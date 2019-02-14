@@ -1,0 +1,3 @@
+<view class="btn-area" id="pagebody">
+<button type="primary" class='addButton' bindtap='addTeacher'>添加教师</button>
+</view>
